@@ -1,0 +1,17 @@
+{
+  "name": "daemon-mcp-worker",
+  "version": "1.0.0",
+  "description": "MCP Worker for Daemon API",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "bun test",
+    "test:watch": "bun test --watch"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250110.0",
+    "wrangler": "^3.95.0"
+  }
+}

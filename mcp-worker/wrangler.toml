@@ -1,0 +1,8 @@
+name = "daemon-mcp"
+main = "src/index.ts"
+compatibility_date = "2025-01-11"
+# account_id set via CLOUDFLARE_ACCOUNT_ID env var
+
+routes = [
+  { pattern = "mcp.daemon.wallykroeker.com", custom_domain = true }
+]
