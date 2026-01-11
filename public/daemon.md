@@ -10,102 +10,97 @@ Content follows until the next section.
 
 [ABOUT]
 
-My name is Daniel Miessler (MEE-slur) and I'm a Cybersecurity guy turned Cyber/AI guy based out of the San Francisco Bay Area.
+My name is Wally Kroeker and I'm a Technical Architect and Security Consultant based in Winnipeg, Canada.
 
-My main projects right now are Frame—an AI application building platform, Human 3.0—A system for upgrading humans to prepare for what's coming, and Threshold—an application that filters the internet by what you're guaranteed to like.
+I've spent 20+ years building infrastructure, designing security systems, and helping organizations adopt technology pragmatically. My work bridges three domains that rarely overlap: infrastructure operations, security architecture, and AI adoption strategy.
 
-I spend most of my time thinking about how AI will change work and society. I live in the Bay Area and write at danielmiessler.com. My goal is pretty simple: help people figure out what they're meant to do with their lives, especially as the world changes rapidly around us.
+I work with an AI assistant named Bob, built on Personal AI Infrastructure (PAI) - an open-source framework for building context-rich AI assistants. Bob helps me stay focused, manage tasks, and ship work consistently. I build systems with low friction, high automation, and externalized memory to reduce cognitive overhead.
 
 [CURRENT_LOCATION]
 
-Currently home in the Bay Area
+Winnipeg, Canada
 
 [MISSION]
 
-Increase human Eudaimonia by helping people identify, articulate, and pursue their own purpose in life. Build systems—heavily leveraging the latest in AI—that help people upgrade to the best possible version of themselves (Human 3.0). Transfer (or store) my and B's minds into a format that we can upload into the next (digital) version of our lives.
+Build useful, open systems that help people thrive. Enable human flourishing through technology that respects privacy, reduces cognitive overhead, and serves people rather than extracting from them. Share knowledge openly so others can adapt patterns to their own contexts.
 
 [TELOS]
 
-TELOS is my personal framework for tracking purpose and direction in life. It's a structured way to document Problems I want to solve, Missions to address them, Goals to achieve, and Metrics to track progress. The name comes from the Greek word for purpose or end goal.
+TELOS is my framework for tracking purpose and direction. It documents Problems I want to solve, Missions to address them, and Goals to achieve.
 
-Problems (P) - The most important issues I see in the world that need solving:
-- P1: People lack meaning in their lives, and this is about to get far worse because of AI and robotics taking away most traditional jobs
-- P2: People are stuck in a 1950's style hierarchical mindset that makes them think they're not one of the "special ones" with ideas and dreams
-- P3: People have poor models for how the world works, and the lack the tools to properly improve them
+Problems (P) - The most important issues I see that need solving:
+- P1: Technical teams struggle to adopt AI safely without proper guardrails
+- P2: ADHD makes traditional productivity systems fail; we need different approaches
+- P3: Infrastructure knowledge is siloed; patterns should be shared openly
 
 Missions (M) - My approaches to addressing these problems:
-- M1: Increase human Eudaimonia by helping people identify, articulate, and pursue their own purpose in life
-- M2: Build systems—heavily leveraging the latest in AI—that help people upgrade to the best possible version of themselves (Human 3.0)
-- M3: Transfer (or store) my and B's minds into a format that we can upload into the next (digital) version of our lives
+- M1: Provide security-first AI consulting through GoodFields
+- M2: Build and share ADHD-optimized AI workflows through Bob/PAI
+- M3: Document enterprise patterns at home-lab scale through FabLab
+
+[PROJECTS]
+
+- GoodFields Consulting: AI security and infrastructure consulting for technical teams
+- FabLab: Enterprise-grade home lab infrastructure (Proxmox, containers, IdP, networking)
+- Personal AI Infrastructure (PAI): ADHD-optimized AI assistant framework
+- wallykroeker.com: Personal site built in public with transparent build logs
+- Cognitive Loop: Writing practice exploring AI, consciousness, and presence
+
+[PREFERENCES]
+
+- Writing tools: Cursor IDE with Claude Code
+- Programming languages: TypeScript, Python, Go
+- Operating system: Linux (WSL2 + Ubuntu), Windows
+- AI models: Claude (primary), Gemini for research, local models
+- Infrastructure: Proxmox, Docker, Cloudflare Tunnels, Authentik
+- Task management: Vikunja with AI integration
+- Communication: Direct, honest
+- Work style: Deep focus blocks, heavy automation, externalized memory
+- Values: Openness, usefulness, security-first, community over competition
+
+[DAILY_ROUTINE]
+
+(Aspirational - the rhythm I'm building toward)
+
+- Morning: Breathwork and mobility (8-12 min), compass check to set the day's priority
+- Deep work: Two focused build blocks (60-120 min each) with clear handoffs for future-me
+- Midday reset: Movement and brief admin sweep to protect afternoon energy
+- Late day: Learning time - reading and capturing insights about security, agents, or systems
+- Evening: Family first, optional Cognitive Loop writing when life allows, shutdown ritual to plan tomorrow's start
+- Throughout: Bob manages task flow (Vikunja), financial tracking (Firefly III), and gentle accountability
 
 [FAVORITE_BOOKS]
 
-- "1929" (currently reading)
-- "Mathematica", by David Bessis
-- "Meditations" by Marcus Aurelius
-- "The Obstacle Is the Way" by Ryan Holiday
-- "Sapiens" by Yuval Noah Harari
-- "The Singularity Is Near" by Ray Kurzweil
-- "Zero to One" by Peter Thiel
-- "The Art of War" by Sun Tzu
-- "Antifragile" by Nassim Nicholas Taleb
-- "The Black Swan" by Nassim Nicholas Taleb
 - "Thinking, Fast and Slow" by Daniel Kahneman
+- "The Phoenix Project" by Gene Kim
+- "Antifragile" by Nassim Nicholas Taleb
+- "Deep Work" by Cal Newport
+- "Atomic Habits" by James Clear
 - "The Lean Startup" by Eric Ries
+- "Zero to One" by Peter Thiel
 
 [FAVORITE_MOVIES]
 
 - The Matrix
-- Pulp Fiction
+- Inception
+- Interstellar
+- Arrival
 - Ex Machina
 - Blade Runner 2049
-- Her
-- Arrival
-- Interstellar
-- Gattaca
 
 [FAVORITE_PODCASTS]
 
-- The Joe Rogan Experience
 - Lex Fridman Podcast
 - Huberman Lab
-- Making Sense with Sam Harris
-- The Tim Ferriss Show
-
-[DAILY_ROUTINE]
-
-- 8AM Wakeup
-- Outside 🚶🏼‍➡️Walk in the ☀️Sunlight for 5-10 minutes
-- Avoid inputs that could be interesting / distracting
-- 💊 Vitamins / Supplements / Nootropics
-- 🥛 Small Protein shake
-- ☕ Caffeine
-- 📅 Start agenda
-- Chipotle Bowl (Brown Rice / Black Beans) around lunch sometimes
-- Protein Shake for lunch sometimes
-- Try to walk around 5-30 minutes near dusk (not strict on this)
-- Sleep with Eye Mask and Earplugs, around 2300-1AM
-
-[PREFERENCES]
-
-- Writing tools: Neovim with Tokyo Night Storm theme
-- Programming languages: Go, Python, TypeScript
-- Operating system: macOS with extensive CLI customization
-- Coffee: Black, no sugar
-- Music: Electronic, ambient, classical
-- Exercise: Running, hiking, martial arts
-- Learning style: Reading, building, teaching
-- Communication: Direct, honest, philosophical
-- Work style: Deep focus blocks, automation-heavy
-- Values: Curiosity, growth, helping others, building useful things
+- The Changelog
+- Software Engineering Daily
+- Darknet Diaries
 
 [PREDICTIONS]
 
-- Recession-like shock caused by AI job loss by 2027 (Chances About Even)
-- We'll have AGI between 2025 and 2028 (Almost Certain)
-- Open-source models will largely catch up to closed-source models (Probable)
-- Apple is about to go from the worst AI implementation to the best (Probable)
-- Everyone, including people, will have an API (Almost Certain)
-- Personal daemons will broadcast preferences (Almost Certain)
-- Venues personalize based on customer preferences (Almost Certain)
-- People will lack meaning and look for it in games (Almost Certain)
+- AI assistants will become standard tooling for knowledge workers by 2027 (Almost Certain)
+- Personal daemons/APIs will enable new forms of human networking (Probable)
+- ADHD-optimized AI workflows will become a recognized category (Probable)
+- Security-first AI adoption will differentiate successful enterprises (Almost Certain)
+- Open-source AI infrastructure will mature rapidly (Almost Certain)
+- Human-AI partnerships will be measured and optimized like other productivity metrics (Probable)
