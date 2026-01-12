@@ -1,8 +1,9 @@
 # Daemon Migration Project Plan
 
 **Project:** Migrate Daemon to Cloudflare Pages + MCP Worker
-**Status:** Planning
+**Status:** Phase 3 Complete - Ready for Registry
 **Created:** 2026-01-11
+**Completed:** 2026-01-11
 **Project Manager:** Bob Prime
 
 ---
@@ -387,6 +388,88 @@ Cloudflare tasks require dashboard access. Report back with:
 - Pages project URL
 - Worker URL
 - DNS record status
+
+---
+
+## Phase 5: Future Enhancements (Backlog)
+
+**Goal:** Make the daemon a living, real-time representation of current work.
+
+### Task 5.1: Dynamic Daemon Updates via Bob
+**Status:** Backlog
+**Vision:** Enable natural language daemon updates through Bob.
+
+**User Story:**
+> "Bob, add this project to my public daemon."
+> "Bob, update my current location to 'traveling in Vancouver'."
+> "Bob, add 'Daemon Migration' to my current projects."
+
+**Implementation Ideas:**
+- [ ] Create PAI skill: `/daemon-update`
+- [ ] Skill parses intent and updates daemon.md
+- [ ] Auto-commit and push to GitHub
+- [ ] Cloudflare Pages auto-rebuilds
+- [ ] MCP Worker serves fresh content
+
+**Technical Requirements:**
+- Git credentials accessible to Bob
+- daemon.md write access
+- Section-aware parser (add to list vs replace section)
+- Validation against upstream format
+
+---
+
+### Task 5.2: Sync with wallykroeker.com Projects
+**Status:** Backlog
+**Vision:** Single source of truth for projects across daemon and main site.
+
+**Implementation Ideas:**
+- [ ] Shared projects data source (GitHub JSON file or API)
+- [ ] wallykroeker.com/projects pulls from same source
+- [ ] daemon.md [ABOUT] section auto-generates from projects list
+- [ ] Or: wallykroeker.com serves as source, daemon fetches
+
+**Dependencies:** Task 5.1 (need update mechanism first)
+
+---
+
+### Task 5.3: Real-Time Activity Broadcasting (Pie in the Sky)
+**Status:** Dream
+**Vision:** Daemon shows what you're actively working on, updated in real-time.
+
+**Possibilities:**
+- [ ] **Current Focus:** Auto-update based on Vikunja active task
+- [ ] **GitHub Activity:** Show recent commits/PRs
+- [ ] **Session Status:** "Deep work block" / "Available" / "AFK"
+- [ ] **Daily Log:** Auto-generated summary of day's work
+- [ ] **WebSocket/SSE:** Real-time push to dashboard viewers
+
+**Implementation Ideas:**
+- Cloudflare Durable Objects for real-time state
+- Webhook integrations (GitHub, Vikunja, Bob session hooks)
+- New MCP tools: `get_current_focus`, `get_recent_activity`
+- Dashboard WebSocket connection for live updates
+
+**Privacy Considerations:**
+- Granular control over what's broadcast
+- "Work mode" vs "public mode" toggle
+- Time-delayed updates (not literal real-time)
+
+---
+
+### Task 5.4: Upstream Contribution
+**Status:** Backlog
+**Vision:** Contribute useful patterns back to danielmiessler/Daemon.
+
+**Potential Contributions:**
+- [ ] Dynamic update mechanism (if generalized)
+- [ ] Real-time activity tools
+- [ ] Documentation improvements
+- [ ] Additional MCP tools
+
+---
+
+*Phase 5 added 2026-01-11 - The living daemon vision*
 
 ---
 
