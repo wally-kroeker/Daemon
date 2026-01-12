@@ -14,7 +14,9 @@ My name is Wally Kroeker and I'm a Technical Architect and Security Consultant b
 
 I've spent 20+ years building infrastructure, designing security systems, and helping organizations adopt technology pragmatically. My work bridges three domains that rarely overlap: infrastructure operations, security architecture, and AI adoption strategy.
 
-I work with an AI assistant named Bob, built on Personal AI Infrastructure (PAI) - an open-source framework for building context-rich AI assistants. Bob helps me stay focused, manage tasks, and ship work consistently. I build systems with low friction, high automation, and externalized memory to reduce cognitive overhead.
+My main projects right now are GoodFields Consulting—AI security and infrastructure consulting for technical teams, FabLab—enterprise-grade home lab infrastructure documenting patterns at home-lab scale, and Personal AI Infrastructure (PAI)—an ADHD-optimized AI assistant framework. I also maintain wallykroeker.com as a personal site built in public, and Cognitive Loop—a writing practice exploring AI, consciousness, and presence.
+
+I work with an AI assistant named Bob, built on PAI. Bob helps me stay focused, manage tasks, and ship work consistently. I build systems with low friction, high automation, and externalized memory to reduce cognitive overhead.
 
 [CURRENT_LOCATION]
 
@@ -26,7 +28,7 @@ Build useful, open systems that help people thrive. Enable human flourishing thr
 
 [TELOS]
 
-TELOS is my framework for tracking purpose and direction. It documents Problems I want to solve, Missions to address them, and Goals to achieve.
+TELOS is my framework for tracking purpose and direction in life. It's a structured way to document Problems I want to solve, Missions to address them, and Goals to achieve. The name comes from the Greek word for purpose or end goal.
 
 Problems (P) - The most important issues I see that need solving:
 - P1: Technical teams struggle to adopt AI safely without proper guardrails
@@ -37,37 +39,6 @@ Missions (M) - My approaches to addressing these problems:
 - M1: Provide security-first AI consulting through GoodFields
 - M2: Build and share ADHD-optimized AI workflows through Bob/PAI
 - M3: Document enterprise patterns at home-lab scale through FabLab
-
-[PROJECTS]
-
-- GoodFields Consulting: AI security and infrastructure consulting for technical teams
-- FabLab: Enterprise-grade home lab infrastructure (Proxmox, containers, IdP, networking)
-- Personal AI Infrastructure (PAI): ADHD-optimized AI assistant framework
-- wallykroeker.com: Personal site built in public with transparent build logs
-- Cognitive Loop: Writing practice exploring AI, consciousness, and presence
-
-[PREFERENCES]
-
-- Writing tools: Cursor IDE with Claude Code
-- Programming languages: TypeScript, Python, Go
-- Operating system: Linux (WSL2 + Ubuntu), Windows
-- AI models: Claude (primary), Gemini for research, local models
-- Infrastructure: Proxmox, Docker, Cloudflare Tunnels, Authentik
-- Task management: Vikunja with AI integration
-- Communication: Direct, honest
-- Work style: Deep focus blocks, heavy automation, externalized memory
-- Values: Openness, usefulness, security-first, community over competition
-
-[DAILY_ROUTINE]
-
-(Aspirational - the rhythm I'm building toward)
-
-- Morning: Breathwork and mobility (8-12 min), compass check to set the day's priority
-- Deep work: Two focused build blocks (60-120 min each) with clear handoffs for future-me
-- Midday reset: Movement and brief admin sweep to protect afternoon energy
-- Late day: Learning time - reading and capturing insights about security, agents, or systems
-- Evening: Family first, optional Cognitive Loop writing when life allows, shutdown ritual to plan tomorrow's start
-- Throughout: Bob manages task flow (Vikunja), financial tracking (Firefly III), and gentle accountability
 
 [FAVORITE_BOOKS]
 
@@ -95,6 +66,27 @@ Missions (M) - My approaches to addressing these problems:
 - The Changelog
 - Software Engineering Daily
 - Darknet Diaries
+
+[DAILY_ROUTINE]
+
+- Morning: Breathwork and mobility (8-12 min), compass check to set the day's priority
+- Deep work: Two focused build blocks (60-120 min each) with clear handoffs for future-me
+- Midday reset: Movement and brief admin sweep to protect afternoon energy
+- Late day: Learning time - reading and capturing insights about security, agents, or systems
+- Evening: Family first, optional Cognitive Loop writing when life allows, shutdown ritual to plan tomorrow's start
+- Throughout: Bob manages task flow (Vikunja), financial tracking (Firefly III), and gentle accountability
+
+[PREFERENCES]
+
+- Writing tools: Cursor IDE with Claude Code
+- Programming languages: TypeScript, Python, Go
+- Operating system: Linux (WSL2 + Ubuntu), Windows
+- AI models: Claude (primary), Gemini for research, local models
+- Infrastructure: Proxmox, Docker, Cloudflare Tunnels, Authentik
+- Task management: Vikunja with AI integration
+- Communication: Direct, honest
+- Work style: Deep focus blocks, heavy automation, externalized memory
+- Values: Openness, usefulness, security-first, community over competition
 
 [PREDICTIONS]
 
