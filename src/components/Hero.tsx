@@ -8,7 +8,7 @@ export function Hero() {
   useEffect(() => {
     async function fetchLocation() {
       try {
-        const response = await fetch('https://mcp.daemon.danielmiessler.com', {
+        const response = await fetch('https://mcp.daemon.wallykroeker.com', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -23,7 +23,7 @@ export function Hero() {
           setLocation(data.result.content[0].text);
         }
       } catch {
-        setLocation('Bay Area');
+        setLocation('Winnipeg, Canada');
       }
     }
     fetchLocation();
@@ -55,8 +55,8 @@ export function Hero() {
           className="font-heading text-lg text-text-secondary mb-3"
         >
           Personal MCP API for{' '}
-          <a href="https://danielmiessler.com" className="text-brand hover:underline">
-            Daniel Miessler
+          <a href="https://wallykroeker.com" className="text-brand hover:underline">
+            Wally Kroeker
           </a>
         </motion.p>
 
