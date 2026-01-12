@@ -172,6 +172,63 @@ function parseDaemonMd(content: string): Record<string, string> {
   return sections;
 }
 
+// Parse bullet list string into array (handles "- item" format)
+function parseBulletList(text: string): string[] {
+  if (!text) return [];
+  return text
+    .split('\n')
+    .filter(line => line.trim().startsWith('-'))
+    .map(line => line.replace(/^-\s*/, '').trim())
+    .filter(Boolean);
+}
+
+// Parse TELOS into structured array of P/M items
+function parseTelosItems(text: string): string[] {
+  if (!text) return [];
+  return text
+    .split('\n')
+    .filter(line => line.trim().match(/^-\s*[PM]\d+:/))
+    .map(line => line.replace(/^-\s*/, '').trim())
+    .filter(Boolean);
+}
+
+// Extract projects from ABOUT section (upstream format puts projects inline)
+function extractProjectsFromAbout(about: string): string[] {
+  if (!about) return [];
+
+  const projects: string[] = [];
+
+  // Look for "My main projects right now are X, Y, and Z" pattern
+  const mainMatch = about.match(/My main projects right now are ([^.]+)\./i);
+  if (mainMatch) {
+    // Split by ", and " or ", " but handle the last "and" specially
+    const projectText = mainMatch[1];
+    // Replace " and " at end with comma to normalize
+    const normalized = projectText.replace(/,?\s+and\s+(?=[^,]+$)/, ', ');
+    const items = normalized.split(/,\s*/);
+    for (const item of items) {
+      const cleaned = item.trim();
+      if (cleaned.length > 0) {
+        projects.push(cleaned);
+      }
+    }
+  }
+
+  // Check for "I also maintain X" additions
+  const alsoMatch = about.match(/I also maintain ([^,]+)/i);
+  if (alsoMatch) {
+    projects.push(alsoMatch[1].trim());
+  }
+
+  // Check for Cognitive Loop mention
+  const cognitiveMatch = about.match(/Cognitive Loop[^.]+/i);
+  if (cognitiveMatch) {
+    projects.push(cognitiveMatch[0].trim());
+  }
+
+  return projects;
+}
+
 // Build MCP-compliant success response
 function buildMcpResponse(text: string, id: number | string) {
   return {
@@ -253,20 +310,24 @@ async function handleToolsCall(
     get_projects: "PROJECTS",
   };
 
-  // Handle get_all - return all sections as JSON
+  // Handle get_all - return all sections as JSON with proper types
   if (toolName === "get_all") {
     const allData = {
+      // Text fields
       about: daemonData.ABOUT || "",
       mission: daemonData.MISSION || "",
-      telos: daemonData.TELOS || "",
       current_location: daemonData.CURRENT_LOCATION || "",
-      preferences: daemonData.PREFERENCES || "",
-      favorite_books: daemonData.FAVORITE_BOOKS || "",
-      favorite_movies: daemonData.FAVORITE_MOVIES || "",
-      favorite_podcasts: daemonData.FAVORITE_PODCASTS || "",
-      daily_routine: daemonData.DAILY_ROUTINE || "",
-      predictions: daemonData.PREDICTIONS || "",
-      projects: daemonData.PROJECTS || "",
+      // TELOS as array of P/M items for dashboard
+      telos: parseTelosItems(daemonData.TELOS || ""),
+      // List fields as arrays
+      preferences: parseBulletList(daemonData.PREFERENCES || ""),
+      favorite_books: parseBulletList(daemonData.FAVORITE_BOOKS || ""),
+      favorite_movies: parseBulletList(daemonData.FAVORITE_MOVIES || ""),
+      favorite_podcasts: parseBulletList(daemonData.FAVORITE_PODCASTS || ""),
+      daily_routine: parseBulletList(daemonData.DAILY_ROUTINE || ""),
+      predictions: parseBulletList(daemonData.PREDICTIONS || ""),
+      // Extract projects from ABOUT section (upstream format)
+      projects: { technical: extractProjectsFromAbout(daemonData.ABOUT || ""), creative: [], personal: [] },
       last_updated: new Date().toISOString(),
     };
     return buildMcpResponse(JSON.stringify(allData), id);
