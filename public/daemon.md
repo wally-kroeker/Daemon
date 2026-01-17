@@ -14,9 +14,9 @@ My name is Wally Kroeker and I'm a Technical Architect and Security Consultant b
 
 I've spent 20+ years building infrastructure, designing security systems, and helping organizations adopt technology pragmatically. My work bridges three domains that rarely overlap: infrastructure operations, security architecture, and AI adoption strategy.
 
-My main projects right now are GoodFields Consulting—AI security and infrastructure consulting for technical teams, FabLab—enterprise-grade home lab infrastructure documenting patterns at home-lab scale, and Personal AI Infrastructure (PAI)—an ADHD-optimized AI assistant framework. I also maintain wallykroeker.com as a personal site built in public, and Cognitive Loop—a writing practice exploring AI, consciousness, and presence.
+My main projects right now are GoodFields Consulting—AI security and infrastructure consulting for technical teams, FabLab—enterprise-grade home lab infrastructure documenting patterns at home-lab scale, and Bob (github.com/wally-kroeker/pai)—an ADHD-optimized AI assistant framework. I also maintain wallykroeker.com (github.com/wally-kroeker/wallykroeker.com) as a personal site built in public, and Cognitive Loop (cognitiveloop.substack.com)—a writing practice exploring AI, consciousness, and presence.
 
-I work with an AI assistant named Bob, built on PAI. Bob helps me stay focused, manage tasks, and ship work consistently. I build systems with low friction, high automation, and externalized memory to reduce cognitive overhead.
+I work with an AI assistant named Bob. Bob helps me stay focused, manage tasks, and ship work consistently. I build systems with low friction, high automation, and externalized memory to reduce cognitive overhead.
 
 [CURRENT_LOCATION]
 
@@ -42,22 +42,19 @@ Missions (M) - My approaches to addressing these problems:
 
 [FAVORITE_BOOKS]
 
-- "Thinking, Fast and Slow" by Daniel Kahneman
-- "The Phoenix Project" by Gene Kim
-- "Antifragile" by Nassim Nicholas Taleb
-- "Deep Work" by Cal Newport
-- "Atomic Habits" by James Clear
-- "The Lean Startup" by Eric Ries
-- "Zero to One" by Peter Thiel
+- "Recapture the Rapture" by Jamie Wheal
+- "Breath" by James Nestor
+- "Utopia for Realists" by Rutger Bregman
+- "Humankind" by Rutger Bregman
+- The Bobiverse series by Dennis E. Taylor
+- The Expanse series by James S.A. Corey
 
 [FAVORITE_MOVIES]
 
-- The Matrix
-- Inception
-- Interstellar
-- Arrival
-- Ex Machina
-- Blade Runner 2049
+- The Princess Bride
+- Monty Python and the Holy Grail
+- Star Wars (all of them)
+- Star Trek (TV series)
 
 [FAVORITE_PODCASTS]
 
@@ -69,6 +66,8 @@ Missions (M) - My approaches to addressing these problems:
 
 [DAILY_ROUTINE]
 
+(Aspirational)
+
 - Morning: Breathwork and mobility (8-12 min), compass check to set the day's priority
 - Deep work: Two focused build blocks (60-120 min each) with clear handoffs for future-me
 - Midday reset: Movement and brief admin sweep to protect afternoon energy
@@ -78,9 +77,9 @@ Missions (M) - My approaches to addressing these problems:
 
 [PREFERENCES]
 
-- Writing tools: Cursor IDE with Claude Code
-- Programming languages: TypeScript, Python, Go
-- Operating system: Linux (WSL2 + Ubuntu), Windows
+- Writing tools: VS Code with Claude Code
+- Programming languages: Learning TypeScript and Python
+- Operating systems: Linux (I love them all equally)
 - AI models: Claude (primary), Gemini for research, local models
 - Infrastructure: Proxmox, Docker, Cloudflare Tunnels, Authentik
 - Task management: Vikunja with AI integration
